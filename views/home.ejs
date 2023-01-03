@@ -1,0 +1,12 @@
+<%- include('partials/header'); -%>
+
+<h1>HOME</h1>
+<p><%=HOMESTARTINGCONTENT%></p>
+<% for(var i=0 ; i<POSTS.length ; i++){ %>
+  <h3><%=POSTS[i].title%></h3>
+  <p><%=(POSTS[i].description)%></p>
+<%}%>
+<form class="" action="/compose" method="post"></form>
+
+
+<%- include('partials/footer'); -%>
